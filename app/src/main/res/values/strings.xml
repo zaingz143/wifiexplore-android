@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Wifiexplorer</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_activityshan">Map</string>
+    <string name="title_tab_start_date">Start Date</string>
+    <string name="ttile_tab_end_date">End Date</string>
+    <string name="top_label_text">Impulse Buy!</string>
+    <string name="action_settings">Settings</string>
+    <string name="buy_button_label">Buy Now</string>
+    <string name="google_wallet_unavailable">Google Wallet is unavailable</string>
+    <string name="error_code">Error code: %d</string>
+    <string name="buy_with">Buy with:</string>
+    <string name="ship_to">Ship to:</string>
+    <string name="address_format">%1$s\n%2$s\n%3$s%4$s%5$s %6$s %7$s</string>
+    <string name="change">Change</string>
+    <string name="edit">Edit</string>
+    <string name="preferred_account">Preferred Account</string>
+    <string name="preferred_account_prompt">Choose an account</string>
+    <string name="generic_error">An error occurred: %d</string>
+    <string name="network_error">An error occurring while contacting Google. Please try again later.</string>
+    <string name="spending_limit_exceeded">You have exceeded your spending limit</string>
+
+    <string name="title_activity_confirm">Confirm Your Order, yo!</string>
+    <string name="loading">Loading...</string>
+    <string name="title_activity_completed_order">Order is Complete, yo!</string>
+    <string name="roll_dice">Roll the Dice</string>
+    <string name="order_receipt_text">Congratulations! You are now the proud owner of a %1$s!\n\nIt will be shipped to:\n%2$s\n\nReceipt sent to %3$s\n\nOrder confirmation number: %4$s</string>
+</resources>
+

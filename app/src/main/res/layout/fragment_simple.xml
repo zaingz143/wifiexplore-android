@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             tools:context="com.example.dell.wifiexplorer.SimpleFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        >
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+     <TextView
+        android:id="@+id/textview_in_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+
+
+        <View android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:background="@drawable/btncircle"
+              android:layout_marginTop="40dp"
+              android:id="@+id/view2"
+
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"/>
+
+
+        <View android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginTop="40dp"
+              android:clickable="true"
+              android:background="@drawable/btncircle"
+              android:id="@+id/view3"
+       />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnclick"
+            android:src="@drawable/router"
+            android:layout_alignTop="@+id/view2"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignStart="@+id/view2"
+            android:layout_marginLeft="9dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnclick2"
+            android:src="@drawable/router"
+            android:layout_alignTop="@+id/view3"
+            android:layout_alignRight="@+id/view3"
+            android:layout_alignEnd="@+id/view3"
+            android:layout_marginRight="9dp"/>
+    </RelativeLayout>
+</RelativeLayout>

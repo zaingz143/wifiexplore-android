@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/background"
+                tools:context="com.example.dell.wifiexplorer.ConnectToWifi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:src="@drawable/mapheader"
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+
+            android:layout_below="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="0.7dp"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:layout_below="@+id/line"
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            android:id="@+id/linearLayout"
+            android:weightSum="10"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+
+
+                android:layout_weight="1"
+
+                android:id="@+id/mymenu"
+                android:src="@drawable/burger"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="8"
+                android:id="@+id/addwifi"
+                android:src="@drawable/addwifimap"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_weight="1"
+                android:id="@+id/search"
+                android:src="@drawable/searchwifi"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="1dp">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                      android:layout_height="410dp" android:id="@+id/map"
+                      tools:context="com.example.muhammadshan.comwhatsheremuhammadshan.MapsActivity"
+                      android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+
+            <LinearLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/locationMarkertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:minWidth="180dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text=" Set your Location "
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/marker" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="7"
+
+                android:id="@+id/ok"
+                android:clickable="true"
+
+                android:background="@drawable/btnbackground"
+
+                android:layout_gravity="center_horizontal|bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:text="OK"
+                    android:id="@+id/textView5"
+                    android:textColor="@drawable/textcolor"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

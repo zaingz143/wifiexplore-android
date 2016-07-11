@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.wifiexplorer">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+
+    <application
+        android:name=".WifiExploreApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoTitleBar.WithColoredSpinners">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.NoTitleBar.WithColoredSpinners">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.NoTitleBar.WithColoredSpinners" />
+        <activity android:name=".Options" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".AddWifi"
+
+            />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ConnectToWifi" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver
+            android:name=".PhoneCodeReceiver"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Menu" />
+        <activity android:name=".EmailVerifyActivity" />
+        <activity android:name=".PhoneVerifyActivity" />
+        <activity android:name=".Search" />
+        <activity android:name=".Connected" />
+        <activity android:name=".SetLocation" />
+        <activity android:name=".Disconnected" />
+        <activity android:name=".ConnectionInfo" />
+        <activity android:name=".Lenders" />
+        <activity android:name=".History" />
+        <activity android:name=".UserHistory" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Payment" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".EditWifi"/>
+
+
+      <!--  <receiver
+            android:name=".ConnectionChangeReceiver"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>-->
+        <receiver android:name=".ConnectionChangeReceiver" >
+            <intent-filter>
+                <action android:name="com.example.Broadcast" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+<activity android:name=".PlaceOrderActivity"/>
+        <activity android:name=".DisplayReceiptActivity">
+
+
+        </activity>
+<activity android:name=".SelectItemActivity"/>
+
+
+        <!--<receiver android:name=".ConnectToWifi$LogoutReceiver"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>-->
+
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

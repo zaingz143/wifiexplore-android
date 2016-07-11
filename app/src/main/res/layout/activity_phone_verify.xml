@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/background"
+                tools:context="com.example.dell.wifiexplorer.Login">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="19"
+
+
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewlgo"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/loginlogo3"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+
+                android:text="Phone Verify"
+                android:textSize="25dp"
+
+                android:id="@+id/textView" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmation code will be recived automatically"
+              android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="24dp"
+
+                 />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmation code will be recived automatically"
+                android:id="@+id/textViewv"
+              android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/include"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="20"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cells10"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="45dp"
+                android:id="@+id/imageView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Write phone number"
+                android:layout_marginLeft="13dp"
+                android:textSize="15dp"
+                android:inputType="phone"
+                android:layout_marginRight="50dp"
+                android:textColorHint="#ffffff"
+                android:textColor="@color/colorText"
+                android:textCursorDrawable="@color/colorCursor"
+                android:background="@android:color/transparent"
+                android:id="@+id/mob" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+
+            android:weightSum="20">
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:id="@+id/confirm"
+            android:clickable="true"
+
+            android:background="@drawable/btnbackground"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="Confirm"
+                android:id="@+id/textView4"
+                android:textColor="@drawable/textcolor"
+                />
+
+        </RelativeLayout>
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progress_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/register"
+
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

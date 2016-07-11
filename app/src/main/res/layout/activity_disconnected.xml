@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.dell.wifiexplorer.Options">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/mapheader"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat"
+            android:weightSum="20"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:id="@+id/imageView11"
+
+                android:background="@drawable/atnt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ATNT"
+                android:id="@+id/name"
+                android:textColor="#FFFFFF"
+                android:textSize="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView11"
+                android:layout_alignParentTop="true" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat"
+            >
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/connected"
+            android:orientation="vertical"
+            android:tileMode="repeat"
+            android:weightSum="20"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+
+                android:tileMode="repeat"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+
+                    android:text="Disconnected"
+                    android:textSize="27dp"
+
+                    android:id="@+id/textView" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.1"
+                android:orientation="horizontal"
+                android:tileMode="repeat">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="6dp"
+                    android:text="STATUS"
+
+                    android:textSize="17dp"
+
+                    android:id="@+id/textView232" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView1222"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/status2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="6dp"
+                    android:text="00:15:59"
+                    android:textSize="17dp"
+
+                    android:id="@+id/endtime" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView1223"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/clock"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.05"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="6dp"
+                    android:text="004,345,8 b"
+                    android:textSize="17dp"
+
+                    android:id="@+id/totalUsage" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView223"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/updown"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.1"
+                android:tileMode="repeat"
+                android:layout_marginLeft="20dp"
+                android:weightSum="4"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:tileMode="repeat">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.2"
+                android:tileMode="repeat"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:text="ACCOUNT CHARGED 14$"
+                    android:textSize="17dp"
+
+                    android:id="@+id/textView24" />
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/rate"
+                android:clickable="true"
+                android:background="@drawable/roundedrect"
+                android:weightSum="20">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="RATE THIS CONNECTION"
+                    android:textSize="14dp"
+                    android:id="@+id/textView4"
+                    android:textColor="@drawable/textcolor"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

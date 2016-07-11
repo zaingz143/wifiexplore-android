@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    tools:context="com.example.dell.wifiexplorer.ConnectToWifi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:src="@drawable/mapheader"
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+
+            android:layout_below="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/line"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="0.7dp"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:layout_below="@+id/line"
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            android:id="@+id/linearLayout"
+            android:weightSum="10"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+
+
+                android:layout_weight="1"
+
+                android:id="@+id/mymenu"
+                android:src="@drawable/burger"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="8"
+                android:id="@+id/addwifi"
+                android:src="@drawable/addwifimap"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_weight="1"
+                android:id="@+id/search"
+                android:src="@drawable/searchwifi"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:background="#4f070707"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:id="@+id/linearLayoutl"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/name"
+                android:textColor="@android:color/white"
+                android:text="WELCOME"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/linearLayoutl"
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:id="@+id/linearLayout2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="CONNECTIONS INFO"/>
+
+        </LinearLayout>
+        <View
+
+            android:layout_below="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/lineline"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="170dp"
+            android:layout_height="1dp"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:layout_below="@+id/lineline"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.6"
+                android:id="@+id/device"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="DEVICE ACTIVE:"
+
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 05"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/numb">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="NUMBER OF USER CONNECTED:"
+                    android:layout_weight=".4"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 05"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.6"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/udata">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="DATA USED:"
+
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 05"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.6"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/earning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="TOTAL EARNING:"
+
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="216$"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.6"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="TOTAL RATING:"
+
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 05"
+
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_recycler_view"
+
+            android:layout_below="@id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/line"
+            android:layout_alignEnd="@+id/line"
+            android:layout_alignLeft="@+id/lineline"
+            android:layout_alignStart="@+id/lineline" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView7"
+            android:layout_marginTop="65dp"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/left"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+         android:layout_below="@+id/lineline"
+            android:layout_toRightOf="@+id/horizontal_recycler_view"
+            android:layout_toEndOf="@+id/horizontal_recycler_view"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/rightarrow"
+            android:layout_marginTop="220dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

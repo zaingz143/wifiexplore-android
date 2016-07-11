@@ -1,0 +1,81 @@
+<resources>
+
+
+
+
+    <style name="Theme.NoTitleBar.WithColoredSpinners" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="MyEditTextTheme">
+
+        <item name="colorControlNormal">#ffffff</item>
+
+    </style>
+
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+
+        <item name="colorControlNormal">#ffffff</item>
+
+    </style>
+
+
+
+
+    <style name="SpinnerItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">#FF0000</item>
+    </style>-->
+
+
+
+    <style name="ImpulseWalletFragmentDetailsTextAppearance">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ImpulseWalletFragmentDetailsHeaderTextAppearance" parent="ImpulseWalletFragmentDetailsTextAppearance">
+        <item name="android:textColor">#0000ff</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ImpulseWalletFragmentButtonTextAppearance">
+        <item name="android:textColor">#0000ff</item>
+    </style>
+
+    <style name="ImpulseWalletFragmentStyle">
+        <item name="buyButtonHeight">64dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_now</item>
+        <item name="buyButtonAppearance">grayscale</item>
+
+        <item name="maskedWalletDetailsTextAppearance">@style/ImpulseWalletFragmentDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/ImpulseWalletFragmentDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">#ffffff</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/ImpulseWalletFragmentButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+
+
+</resources>

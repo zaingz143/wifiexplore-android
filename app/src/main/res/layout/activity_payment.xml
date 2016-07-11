@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.dell.wifiexplorer.Options">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/mapheader"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/papm"
+                android:layout_weight="4"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Add Payment Method"
+                android:layout_weight="18"
+                android:gravity="left|center"
+                android:textSize="20sp"
+                android:layout_marginRight="50dp"
+                android:textColor="#ffffff"
+
+                android:id="@+id/textview" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Card Number"
+                android:layout_weight="18"
+                android:layout_marginTop="0dp"
+                android:gravity="left|center"
+                android:textSize="19dp"
+                android:layout_marginRight="50dp"
+                android:textColor="#ffffff"
+
+                android:id="@+id/textview4" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="CVS"
+                android:layout_weight="18"
+                android:layout_marginTop="0dp"
+                android:gravity="left|center"
+                android:textSize="19dp"
+                android:layout_marginRight="50dp"
+                android:textColor="#ffffff"
+
+                android:id="@+id/textview5" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Expiry Date"
+                android:layout_weight="14"
+                android:layout_marginTop="0dp"
+                android:gravity="left|center"
+                android:textSize="19dp"
+                android:layout_marginRight="50dp"
+                android:textColor="#ffffff"
+
+                android:id="@+id/textview7" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/calender"
+
+                android:layout_weight="3"
+                android:id="@+id/calendar" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal"
+            android:tileMode="repeat">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:id="@+id/login"
+            android:clickable="true"
+
+            android:background="@drawable/btnbackground"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Save"
+                android:id="@+id/textView4"
+                android:textColor="@drawable/textcolor"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
